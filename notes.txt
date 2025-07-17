@@ -1,0 +1,23 @@
+# Limit order is an order to trade a certain amount of stock at a set price 
+  # Summarized by giving stating the quantities and price posted at each price 
+  # The lowest price for an outstanding sell order is the ask price
+  # The highest price for an outstanding buy order is the bid price
+
+
+ # A market order is an order to buy/sell some quantity of stock at the best available price in the limit order book
+ # Limit order sits till either filled or cancelled
+
+
+
+ # Limit orders are placed on a price grid {1,..,n} -> multiples of a price tick
+ # State of orderbook follows a continuous time process X(t) = (X_1(t), ... , X_n(t)), where X_p(t) is the number of outstanding limit orders at price p
+ # ask price p_A(t) at time t is then = to inf{p=1,...,n,X_p(t)>0}^(n+1) 
+ # bid price p_B(t) at time t is then = to sup{p=1,...,n,X_p(t)<0}V0
+
+# mid price is p_M(t) and the bid ask spread s(t) are defined as p_M(t) = (p_B(t) + p_A(t))/2 and s(t) = p_A(t) - p_B(t)
+
+
+
+
+
+
